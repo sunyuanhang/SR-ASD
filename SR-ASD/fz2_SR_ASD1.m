@@ -37,7 +37,7 @@ ylabel(str,'FontSize',11,'Fontname','Times New Roman')
 
 %% SR-ASD method
 y=x3';
-llam1=3.4811;
+lam1=3.4811;
 lam2=1.1708; %lam1 and lam2 are set based on the noise standard deviation
 [x]=SR_ASD(y,lam1,lam2);
 figure (4)
