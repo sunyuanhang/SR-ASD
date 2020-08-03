@@ -79,13 +79,4 @@ set(findobj(get(gca,'Children'),'LineWidth',0.5),'LineWidth',1);
  str=strcat('Amplitude/(m/s^2)');
  xlabel('Frequency/Hz','FontSize',10,'Fontname','Times New Roman');
  ylabel(str,'FontSize',10,'Fontname','Times New Roman')
- %axis([0,2048,-inf,inf]);
-%% ER value 
-qu2=c;% c:Frequency amplitude
-ANCRP=qu2(21);    % 97.7Hz
-ANCGP=qu2(42);    %205.1Hz                              
-ANC2P=qu2(62);    %312.7Hz
-ANC3P=qu2(83);    %400.4Hz
-DIFHT=[ANCRP ANCGP];
-qqq2=qu2(1:1:1000);
-rate=sum(DIFHT.^2)/sum(qqq2.^2);
+
