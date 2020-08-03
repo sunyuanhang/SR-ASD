@@ -37,9 +37,8 @@ ylabel(str,'FontSize',11,'Fontname','Times New Roman')
 
 %% SR-ASD method
 y=x3';
-sigma1=median(abs(y-median(y)))/0.6745;
-lam1=0.5*3*sigma1;
-lam2=0.4929*1*sigma1+0.0269;
+lam1=3.3514
+lam2 =1.1282  % lam1 and lam2 are set based on the noise standard deviation
 [x]=SR_ASD(y,lam1,lam2);
 figure (4)
 plot(x);
